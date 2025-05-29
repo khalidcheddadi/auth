@@ -7,10 +7,10 @@ import {
 import { createAuthClient } from "better-auth/react";
 import type { auth } from "@/lib/auth";
 import { ac, roles } from "@/lib/permissions";
-import { NEXT_PUBLIC_API_URL } from "./constants";
+
 
 const authClient = createAuthClient({
-  baseURL: NEXT_PUBLIC_API_URL,
+  baseURL: process.env.NEXT_PUBLIC_API_URL,
   plugins: [
     inferAdditionalFields<typeof auth>(),
     adminClient({ ac, roles }),
