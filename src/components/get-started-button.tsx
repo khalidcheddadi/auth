@@ -29,7 +29,7 @@ export const GetStartedButton = () => {
             data-role={session.user.role}
             className="size-4 rounded-full animate-pulse data-[role=USER]:bg-blue-600 data-[role=ADMIN]:bg-red-600"
           />
-          Welcome back, {session.user.name}! 👋
+          Welcome back, {session.user.name}! 👋{session.user.id}
         </p>
       )}
     </div>
