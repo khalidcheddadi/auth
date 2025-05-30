@@ -101,6 +101,10 @@ export default async function Page() {
                 <Button size="lg" disabled={!FULL_POST_ACCESS.success} className={`transition-all duration-300 transform hover:scale-105 ${!FULL_POST_ACCESS.success ? "bg-slate-600 text-slate-400 cursor-not-allowed" : "bg-teal-500 hover:bg-teal-600 text-white"}`}>
                   {FULL_POST_ACCESS.success ? <FiUsers className="mr-2" /> : <FiLock className="mr-2" />} إدارة كل المنشورات
                 </Button>
+                
+                <Button size="lg" disabled={!FULL_POST_ACCESS.success} className={`transition-all duration-300 transform hover:scale-105 ${!FULL_POST_ACCESS.success ? "bg-slate-600 text-slate-400 cursor-not-allowed" : "bg-teal-500 hover:bg-teal-600 text-white"}`}>
+                  {FULL_POST_ACCESS.success ? <FiUsers className="mr-2" /> : <FiLock className="mr-2" />} إدارة كل المنشورات
+                </Button>
               </div>
               {!FULL_POST_ACCESS.success && (
                 <p className="text-xs text-slate-500 mt-3 text-center sm:text-left">

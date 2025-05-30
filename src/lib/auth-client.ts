@@ -10,7 +10,7 @@ import { ac, roles } from "@/lib/permissions";
 
 
 const authClient = createAuthClient({
-  baseURL: "https://auth-dyxn.vercel.app",
+  baseURL: process.env.PUBLIC,
   plugins: [
     inferAdditionalFields<typeof auth>(),
     adminClient({ ac, roles }),
