@@ -70,9 +70,7 @@ export default async function Page() {
               <Button asChild variant="outline" className="w-full border-purple-500 text-purple-300 hover:bg-purple-500 hover:text-white transition-all duration-300 transform hover:scale-105">
                 <Link href="/profile/password"><FiKey className="mr-2" /> تغيير كلمة المرور</Link>
               </Button>
-              <button className="w-full bg-slate-700 hover:bg-red-600 text-slate-300 hover:text-white transition-all duration-300 transform hover:scale-105">
-                <FiLogOut className="mr-2" /> تسجيل الخروج
-              </button>
+             <SignOutButton />
             </div>
           </div>
 
@@ -127,7 +125,3 @@ export default async function Page() {
     </div>
   );
 }
-
-// تأكد من استبدال FiUsers و FiLock بالأيقونات المناسبة إذا كنت تستخدم react-icons
-// يمكنك تثبيتها عبر: npm install react-icons
-// وإضافة أيقونات أخرى حسب الحاجة مثل: import { FiUsers, FiLock } from 'react-icons/fi';
