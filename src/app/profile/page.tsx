@@ -95,7 +95,7 @@ export default async function Page() {
                 <FiSettings className="mr-3 text-sky-400" size={28} /> إدارة المحتوى
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <Button size="lg" className="bg-sky-600 hover:bg-sky-700 text-white transition-all duration-300 transform hover:scale-105">
+                <Button size="lg" className="bg-sky-600/90 hover:bg-sky-700 text-white transition-all duration-300 transform hover:scale-105">
                   <FiUser className="mr-2" /> إدارة منشوراتي
                 </Button>
                 <Button size="lg" disabled={!FULL_POST_ACCESS.success} className={`transition-all duration-300 transform hover:scale-105 ${!FULL_POST_ACCESS.success ? "bg-slate-600 text-slate-400 cursor-not-allowed" : "bg-teal-500 hover:bg-teal-600 text-white"}`}>
